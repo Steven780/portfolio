@@ -1,0 +1,27 @@
+#globetweeter-wrapper {
+	position: relative;
+	width: 490px;
+	height: 490px;
+}
+
+#TweetContent {
+	width: 320px;
+	margin-left: -200px;
+	padding: 40px;
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: -10px;
+	background: #fff;
+	-webkit-box-shadow:  0px 0px 25px 0px rgba(0, 0, 0, 0.16);
+        box-shadow:  0px 0px 25px 0px rgba(0, 0, 0, 0.16);
+        opacity: 0.9;
+        border-radius: 20px;
+}
+
+
+#TweetContent h3 {
+	display: inline-block;
+	*display: block;
+	zoom: 1;
+}

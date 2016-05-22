@@ -1,0 +1,111 @@
+
+@CHARSET "UTF-8";
+.sbHolder{
+	background-color: white;
+	border: solid 1px #e5e5e5;
+	font-size: 18px;
+	font-weight: normal;
+	height: 25px;
+	position: relative;
+	width: 218px;
+	padding: 10px;
+	box-shadow: inset 0 1px 5px rgba(0,0,0,0.15);
+	margin: 0 auto;
+	border-radius: 2px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.sbHolder .sbSelector{font-size: 24px;}
+.sbHolder:focus .sbSelector{}
+.sbSelector{
+	display: block;
+	height: 45px;
+	left: 0;
+	line-height: 45px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 15px;
+	top: 0;
+	width: 193px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #1A1A1A;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: url(arrow-dropdown.png) 0 0 no-repeat;
+	display: block;
+	height: 45px;
+	outline: none;
+	position: absolute;
+	width: 45px;
+	top: 0;
+	right: 0;
+}
+.sbToggle:hover,
+.sbToggleOpen,
+.sbToggleOpen:hover{
+	background: url(arrow-dropdown.png) -45px 0 no-repeat;
+}
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{}
+.sbHolderDisabled .sbToggle{}
+.sbOptions{
+	background: white;
+	border: solid 1px #e5e5e5;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 5px 0;
+	position: absolute;
+	top: 30px;
+	width: 238px;
+	z-index: 1;
+	overflow-y: auto;
+	box-shadow: 0 15px 15px rgba(0,0,0,0.15);
+	border-radius: 2px;
+}
+.sbOptions li{
+	padding: 0 5px;
+	margin: 0;
+}
+.sbOptions a{
+	display: block;
+	outline: none;
+	padding: 0 10px;
+	line-height: 37px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #1A1A1A;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: white;
+	background: #2841d3;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}
